@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("котик.jpg");
+}
+
+#wrap{
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	opacity: 85%;
+	position: absolute;
+}
+
+.heart{
+	width: 40px;
+	height: 40px;
+	background-color: red;
+	margin: 10px auto;
+	transform: rotate(-45deg);
+	top: 45%;
+	left: 50%;
+	position: absolute;
+	animation: heart 3s linear infinite;
+}
+
+
+.heart:before,
+.heart:after{
+	content: "";
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	animation: heart 3s linear infinite;
+}
+.heart:before{
+	margin-top: -20px;
+}
+
+.heart:after{
+	margin-left: 20px;
+}
+
+@keyframes heart{
+	0% {background-color:  #DAF7A6 ;}
+	10% {background-color:  #FFC300 ;}
+	20% {background-color:  #FF5733 ;}
+	30% {background-color:  #C70039 ;}
+	40% {background-color:  #d60c3d ;}
+	50% {background-color:  #d60c21 ;}
+	60% {background-color:  #e70d24 ;}
+	70% {background-color:  #fa0e27;}
+	80% {background-color:  #f80821 ;}
+	90% {background-color:  #ff0000 ;}
+	100% {background-color: #b5f04c;}
+}
+
+.message{
+	position: absolute;
+	top: 50%;
+	left: 44%;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Romanesco', cursive;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+.kotik{
+	position: absolute;
+	top: 20%;
+	left: 34%;
+	opacity: 20%;
+}
